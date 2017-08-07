@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6134DD31F380C80007DB2C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6134DD21F380C80007DB2C5 /* MapKit.framework */; };
 		B625C3691F34335200784A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625C3681F34335200784A2B /* AppDelegate.swift */; };
-		B625C36B1F34335200784A2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625C36A1F34335200784A2B /* ViewController.swift */; };
+		B625C36B1F34335200784A2B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625C36A1F34335200784A2B /* MapViewController.swift */; };
 		B625C36E1F34335200784A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B625C36C1F34335200784A2B /* Main.storyboard */; };
 		B625C3701F34335200784A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B625C36F1F34335200784A2B /* Assets.xcassets */; };
 		B625C3731F34335200784A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B625C3711F34335200784A2B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6134DD21F380C80007DB2C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B625C3651F34335200784A2B /* LongRIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongRIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B625C3681F34335200784A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B625C36A1F34335200784A2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B625C36A1F34335200784A2B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B625C36D1F34335200784A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B625C36F1F34335200784A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B625C3721F34335200784A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +31,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6134DD31F380C80007DB2C5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6134DCF1F380C7F007DB2C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6134DD21F380C80007DB2C5 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B625C35C1F34335100784A2B = {
 			isa = PBXGroup;
 			children = (
 				B625C3671F34335200784A2B /* LongRIDE */,
 				B625C3661F34335200784A2B /* Products */,
+				B6134DCF1F380C7F007DB2C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				B625C3681F34335200784A2B /* AppDelegate.swift */,
-				B625C36A1F34335200784A2B /* ViewController.swift */,
+				B625C36A1F34335200784A2B /* MapViewController.swift */,
 				B625C36C1F34335200784A2B /* Main.storyboard */,
 				B625C36F1F34335200784A2B /* Assets.xcassets */,
 				B625C3711F34335200784A2B /* LaunchScreen.storyboard */,
@@ -98,6 +110,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = X88UDG65ZR;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B625C36B1F34335200784A2B /* ViewController.swift in Sources */,
+				B625C36B1F34335200784A2B /* MapViewController.swift in Sources */,
 				B625C3691F34335200784A2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +282,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X88UDG65ZR;
 				INFOPLIST_FILE = LongRIDE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yukiyamashita.LongRIDE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X88UDG65ZR;
 				INFOPLIST_FILE = LongRIDE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yukiyamashita.LongRIDE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +323,7 @@
 				B625C3791F34335200784A2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
