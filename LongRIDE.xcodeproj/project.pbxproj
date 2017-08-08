@@ -13,6 +13,7 @@
 		B625C36E1F34335200784A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B625C36C1F34335200784A2B /* Main.storyboard */; };
 		B625C3701F34335200784A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B625C36F1F34335200784A2B /* Assets.xcassets */; };
 		B625C3731F34335200784A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B625C3711F34335200784A2B /* LaunchScreen.storyboard */; };
+		B6CB7D831F381D9700909DE5 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CB7D821F381D9700909DE5 /* RouteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B625C36F1F34335200784A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B625C3721F34335200784A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B625C3741F34335200784A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6CB7D821F381D9700909DE5 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				B625C3681F34335200784A2B /* AppDelegate.swift */,
 				B625C36A1F34335200784A2B /* MapViewController.swift */,
+				B6CB7D821F381D9700909DE5 /* RouteViewController.swift */,
 				B625C36C1F34335200784A2B /* Main.storyboard */,
 				B625C36F1F34335200784A2B /* Assets.xcassets */,
 				B625C3711F34335200784A2B /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CB7D831F381D9700909DE5 /* RouteViewController.swift in Sources */,
 				B625C36B1F34335200784A2B /* MapViewController.swift in Sources */,
 				B625C3691F34335200784A2B /* AppDelegate.swift in Sources */,
 			);
