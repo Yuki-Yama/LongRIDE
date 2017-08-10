@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IMb-oo-i29">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HrC-TJ-Gda">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,7 +39,7 @@
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SLy-n6-Ohd">
-                                <rect key="frame" x="0.0" y="164" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="403"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1M-n3-5xY">
                                 <rect key="frame" x="41" y="89" width="44" height="21"/>
@@ -73,34 +73,39 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-mR-Lqg">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="65z-ns-phj"/>
-                                </constraints>
-                                <state key="normal" title="Directions"/>
-                                <connections>
-                                    <segue destination="HrC-TJ-Gda" kind="show" identifier="ShowRoute" id="ntP-IZ-maD"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uhb-ru-5vA" userLabel="Distance Field">
+                                <rect key="frame" x="41" y="576" width="150" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="701-8K-2hF" userLabel="Time Field">
+                                <rect key="frame" x="41" y="617" width="150" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Uhb-ru-5vA" firstAttribute="top" secondItem="SLy-n6-Ohd" secondAttribute="bottom" constant="8" id="05n-JD-bYo"/>
                             <constraint firstAttribute="trailing" secondItem="SLy-n6-Ohd" secondAttribute="trailing" id="0Je-QX-qJs"/>
+                            <constraint firstItem="Uhb-ru-5vA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="0qc-F6-Bfe"/>
                             <constraint firstItem="IPE-in-oTQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="2Jk-iv-9lV"/>
                             <constraint firstItem="C7n-wY-iI4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="2e0-kf-nuC"/>
                             <constraint firstItem="m1M-n3-5xY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="4KW-Gz-v2L"/>
                             <constraint firstItem="HTu-IX-Det" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="4Ld-qc-pRN"/>
-                            <constraint firstItem="cyH-mR-Lqg" firstAttribute="top" secondItem="SLy-n6-Ohd" secondAttribute="bottom" id="5DS-me-Fpe"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cyH-mR-Lqg" secondAttribute="bottom" id="7xb-c1-w6J"/>
                             <constraint firstItem="m1M-n3-5xY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="8mP-5H-TaZ"/>
-                            <constraint firstItem="cyH-mR-Lqg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Lb-S9-iWS"/>
-                            <constraint firstAttribute="trailing" secondItem="cyH-mR-Lqg" secondAttribute="trailing" id="C1I-kM-GbC"/>
                             <constraint firstItem="HTu-IX-Det" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="OlA-m4-DDi"/>
                             <constraint firstItem="SLy-n6-Ohd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="c5y-RY-NTo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="701-8K-2hF" secondAttribute="bottom" constant="20" id="ci2-Yh-kDc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="701-8K-2hF" secondAttribute="trailing" constant="168" id="nHP-xY-n0e"/>
                             <constraint firstItem="SLy-n6-Ohd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nsp-tm-TmB"/>
+                            <constraint firstItem="701-8K-2hF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="o5R-F6-SC7"/>
                             <constraint firstItem="IPE-in-oTQ" firstAttribute="top" secondItem="HTu-IX-Det" secondAttribute="bottom" constant="16" id="tBq-eX-P3M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uhb-ru-5vA" secondAttribute="trailing" constant="168" id="xpn-Ca-6Ii"/>
                             <constraint firstItem="C7n-wY-iI4" firstAttribute="top" secondItem="m1M-n3-5xY" secondAttribute="bottom" constant="25" id="z3c-ri-qpm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SLy-n6-Ohd" secondAttribute="bottom" constant="100" id="z5s-oa-nw8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="BikeMap" id="EFO-Zp-E44">
@@ -137,12 +142,21 @@
                     <view key="view" contentMode="scaleToFill" id="55f-im-D8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DiR-uK-5Iu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Elevation" id="plM-Oj-rHi" customClass="ElevationViewController"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tut-CD-kZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513" y="-606"/>
+            <point key="canvasLocation" x="2694" y="-605"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="43O-Oy-GuN">

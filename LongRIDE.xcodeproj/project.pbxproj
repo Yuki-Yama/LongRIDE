@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47A92FD86C50DA77F11DCB4F /* Pods_LongRIDE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADDBEE7207C82015C2E2837 /* Pods_LongRIDE.framework */; };
 		B6134DD31F380C80007DB2C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6134DD21F380C80007DB2C5 /* MapKit.framework */; };
 		B625C3691F34335200784A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625C3681F34335200784A2B /* AppDelegate.swift */; };
 		B625C36B1F34335200784A2B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625C36A1F34335200784A2B /* MapViewController.swift */; };
 		B625C36E1F34335200784A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B625C36C1F34335200784A2B /* Main.storyboard */; };
 		B625C3701F34335200784A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B625C36F1F34335200784A2B /* Assets.xcassets */; };
 		B625C3731F34335200784A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B625C3711F34335200784A2B /* LaunchScreen.storyboard */; };
-		B6CB7D831F381D9700909DE5 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CB7D821F381D9700909DE5 /* RouteViewController.swift */; };
+		B6CB7D831F381D9700909DE5 /* ElevationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CB7D821F381D9700909DE5 /* ElevationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3219EC74CA3A5B2C3E6FAD4C /* Pods-LongRIDE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongRIDE.release.xcconfig"; path = "Pods/Target Support Files/Pods-LongRIDE/Pods-LongRIDE.release.xcconfig"; sourceTree = "<group>"; };
+		5ADDBEE7207C82015C2E2837 /* Pods_LongRIDE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LongRIDE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6703252EBC77DFEBEE15C1B1 /* Pods-LongRIDE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LongRIDE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LongRIDE/Pods-LongRIDE.debug.xcconfig"; sourceTree = "<group>"; };
 		B6134DD21F380C80007DB2C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B625C3651F34335200784A2B /* LongRIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongRIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B625C3681F34335200784A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +29,7 @@
 		B625C36F1F34335200784A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B625C3721F34335200784A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B625C3741F34335200784A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6CB7D821F381D9700909DE5 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
+		B6CB7D821F381D9700909DE5 /* ElevationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElevationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,16 +38,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6134DD31F380C80007DB2C5 /* MapKit.framework in Frameworks */,
+				47A92FD86C50DA77F11DCB4F /* Pods_LongRIDE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17F0F39F5585AF4A6C9AF287 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6703252EBC77DFEBEE15C1B1 /* Pods-LongRIDE.debug.xcconfig */,
+				3219EC74CA3A5B2C3E6FAD4C /* Pods-LongRIDE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B6134DCF1F380C7F007DB2C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B6134DD21F380C80007DB2C5 /* MapKit.framework */,
+				5ADDBEE7207C82015C2E2837 /* Pods_LongRIDE.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -54,6 +69,7 @@
 				B625C3671F34335200784A2B /* LongRIDE */,
 				B625C3661F34335200784A2B /* Products */,
 				B6134DCF1F380C7F007DB2C5 /* Frameworks */,
+				17F0F39F5585AF4A6C9AF287 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,7 +86,7 @@
 			children = (
 				B625C3681F34335200784A2B /* AppDelegate.swift */,
 				B625C36A1F34335200784A2B /* MapViewController.swift */,
-				B6CB7D821F381D9700909DE5 /* RouteViewController.swift */,
+				B6CB7D821F381D9700909DE5 /* ElevationViewController.swift */,
 				B625C36C1F34335200784A2B /* Main.storyboard */,
 				B625C36F1F34335200784A2B /* Assets.xcassets */,
 				B625C3711F34335200784A2B /* LaunchScreen.storyboard */,
@@ -86,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B625C3771F34335200784A2B /* Build configuration list for PBXNativeTarget "LongRIDE" */;
 			buildPhases = (
+				436FB9580D2BA87767057C7E /* [CP] Check Pods Manifest.lock */,
 				B625C3611F34335200784A2B /* Sources */,
 				B625C3621F34335200784A2B /* Frameworks */,
 				B625C3631F34335200784A2B /* Resources */,
+				0C6E872743B083EDBC13788B /* [CP] Embed Pods Frameworks */,
+				B55BA34E93D179BDB34B18FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,12 +171,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C6E872743B083EDBC13788B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LongRIDE/Pods-LongRIDE-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LongRIDE/Pods-LongRIDE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		436FB9580D2BA87767057C7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LongRIDE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B55BA34E93D179BDB34B18FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LongRIDE/Pods-LongRIDE-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LongRIDE/Pods-LongRIDE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B625C3611F34335200784A2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CB7D831F381D9700909DE5 /* RouteViewController.swift in Sources */,
+				B6CB7D831F381D9700909DE5 /* ElevationViewController.swift in Sources */,
 				B625C36B1F34335200784A2B /* MapViewController.swift in Sources */,
 				B625C3691F34335200784A2B /* AppDelegate.swift in Sources */,
 			);
@@ -282,6 +360,7 @@
 		};
 		B625C3781F34335200784A2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6703252EBC77DFEBEE15C1B1 /* Pods-LongRIDE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X88UDG65ZR;
@@ -296,6 +375,7 @@
 		};
 		B625C3791F34335200784A2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3219EC74CA3A5B2C3E6FAD4C /* Pods-LongRIDE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X88UDG65ZR;

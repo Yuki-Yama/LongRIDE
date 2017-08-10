@@ -140,20 +140,31 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         return renderer
     }
-//
     
-    @IBAction func searchTapped(_ sender: Any) {
-        convertCurAddress(curAddress: self.curAddressField.text!)
-        convertDesAddress(desAddress: self.desAddressField.text!)
-        
- 
-        
-        setRoute()
-    }
+    
+//    let source = MKMapItem( placemark: MKPlacemark(
+//        coordinate: CLLocationCoordinate2DMake(curLatitude, curLongitude),
+//        addressDictionary: nil))
+//    let destination = MKMapItem(placemark: MKPlacemark(
+//        coordinate: CLLocationCoordinate2DMake(desLatitude, desLongitude),
+//        addressDictionary: nil))
+//    
+//    let directionsRequest = MKDirectionsRequest()
+//    directionsRequest.source = source
+//    directionsRequest.destination = destination
+//    
+//    let directions = MKDirections(request: directionsRequest)
+//    
+//    directions.calculateDirectionsWithCompletionHandler { (response, error) -> Void in
+//    print(error)
+//    let distance = response!.routes.first?.distance // meters
+//    print("\(distance! / 1000)km")
+//    }//
+//    
+    
 
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
+
+    
+    
     
 }
