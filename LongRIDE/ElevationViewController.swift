@@ -22,7 +22,7 @@ class ElevationViewController : UIViewController{
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
-            self.getElevation(latitude: Double((locationManager.location?.coordinate.latitude)!), longitude:  Double((locationManager.location?.coordinate.longitude)!))
+            locationManager.requestLocation()
         }
     }
     
@@ -64,9 +64,18 @@ class ElevationViewController : UIViewController{
     
 }
 
-extension ElevationViewController : CLLocationManagerDelegate{
-    func locationManager(manager: CLLocationManager, didUpdateLocations location: [CLLocation]){
+extension ElevationViewController : CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations location: [CLLocation]){
         let locValue:CLLocationCoordinate2D = locationManager.location!.coordinate
         locationManager.stopUpdatingLocation()
+        self.getElevation(latitude: Double((locationManager.location?.coordinate.latitude)!), longitude:  Double((locationManager.location?.coordinate.longitude)!))
+
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+
+        print(error.localizedDescription)
+    
     }
 }
